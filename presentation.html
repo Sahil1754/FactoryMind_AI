@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FactoryMind AI — SY MCA Second Presentation Deck (TKIET)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page { size: 16in 9in landscape; margin: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #0b1120; color: #f1f5f9; }
+    .slide-page { width: 13.333in; height: 7.5in; min-width: 13.333in; min-height: 7.5in; margin: 20px auto; position: relative; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7); page-break-after: always; display: flex; flex-direction: column; }
+    @media print {
+      body { background: transparent !important; }
+      .slide-page { margin: 0 !important; box-shadow: none !important; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body class="p-4">
+
+  <!-- Floating Print & Nav Control -->
+  <div class="no-print fixed top-4 right-4 z-50 flex items-center gap-2 bg-slate-900/90 border border-slate-700 px-4 py-2 rounded-2xl shadow-xl backdrop-blur-md">
+    <button onclick="window.print()" class="px-3 py-1.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold transition flex items-center gap-1.5">
+      <i class="fa-solid fa-file-pdf"></i> Export PDF (Ctrl+P)
+    </button>
+  </div>
+
+  <!-- SLIDE 1: COVER -->
+  <section class="slide-page bg-slate-950 p-12 justify-between border border-slate-800 rounded-3xl">
+    <div>
+      <div class="text-sky-400 font-bold text-xs uppercase tracking-widest font-mono">
+        Tatyasaheb Kore Institute of Engineering & Technology (TKIET), Warananagar
+      </div>
+      <div class="text-slate-400 text-xs">Department of Computer Applications &bull; Academic Year: 2026–2027</div>
+    </div>
+
+    <div class="my-auto space-y-3">
+      <div class="inline-block px-3 py-1 rounded-full bg-sky-950/80 border border-sky-800 text-sky-400 text-xs font-bold font-mono">
+        ★ SY MCA MAJOR PROJECT — PRELIMINARY PROJECT REPORT (REVIEW-II)
+      </div>
+      <h1 class="text-5xl font-black text-white tracking-tight">FactoryMind <span class="text-sky-400">AI</span></h1>
+      <p class="text-xl text-slate-300 font-medium">An AI-Based Predictive Manufacturing and Machine Health Monitoring Platform</p>
+    </div>
+
+    <div class="grid grid-cols-2 gap-8 pt-6 border-t border-slate-800">
+      <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl">
+        <p class="text-xs uppercase font-bold text-slate-400 font-mono mb-2">Presented by (SY MCA Students):</p>
+        <p class="text-sm font-bold text-white">1. [Student Name 1] — Roll No: [Roll 1]</p>
+        <p class="text-sm font-bold text-white">2. [Student Name 2] — Roll No: [Roll 2]</p>
+        <p class="text-sm font-bold text-white">3. [Student Name 3] — Roll No: [Roll 3]</p>
+      </div>
+      <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl">
+        <p class="text-xs uppercase font-bold text-slate-400 font-mono mb-2">Under the Guidance of:</p>
+        <p class="text-sm font-bold text-white">[Project Guide Name]</p>
+        <p class="text-xs text-slate-400">Assistant Professor, Department of Computer Applications</p>
+        <p class="text-xs text-slate-400">TKIET, Warananagar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2: ABSTRACT -->
+  <section class="slide-page bg-white text-slate-900 p-12 justify-between rounded-3xl">
+    <div>
+      <div class="flex justify-between items-start border-b border-slate-200 pb-3">
+        <div>
+          <span class="text-sky-600 font-bold text-xs uppercase tracking-wider font-mono">EXECUTIVE OVERVIEW</span>
+          <h2 class="text-3xl font-black text-slate-900">Abstract</h2>
+        </div>
+        <div class="text-right text-xs text-slate-500 font-mono">
+          <div>TKIET Warananagar</div>
+          <div class="text-sky-600 font-bold">SY MCA &bull; Review-II</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-8 my-auto">
+      <div class="bg-sky-50 border-2 border-sky-200 p-6 rounded-2xl space-y-3">
+        <h3 class="text-base font-bold text-sky-900 flex items-center gap-2">
+          <i class="fa-solid fa-triangle-exclamation text-sky-600"></i> Problem Statement & Solution
+        </h3>
+        <ul class="text-xs text-slate-700 space-y-2 leading-relaxed">
+          <li><strong>The Industrial Breakdown Burden:</strong> Unplanned machine breakdowns cost manufacturing plants an average of $260,000 per hour in emergency downtime.</li>
+          <li><strong>Autonomous Prognostics:</strong> FactoryMind AI delivers an end-to-end cyber-physical predictive maintenance platform integrating multi-sensor IIoT telemetry, Machine Learning, and Explainable AI (XAI).</li>
+          <li><strong>Multi-Sensor Telemetry:</strong> Continuously monitors spindle vibration RMS, temperature, current draw, and rotation speed across industrial assets.</li>
+          <li><strong>Proactive Paradigm:</strong> Replaces reactive repairs with algorithmic Remaining Useful Life (RUL) estimation.</li>
+        </ul>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl space-y-3">
+        <h3 class="text-base font-bold text-slate-800 flex items-center gap-2">
+          <i class="fa-solid fa-microchip text-slate-600"></i> Technology & Expected Outcomes
+        </h3>
+        <ul class="text-xs text-slate-700 space-y-2 leading-relaxed">
+          <li><strong>Dual Architecture:</strong> High-throughput Java 21 Industrial Edge Gateway for PLC polling + Python 3.12 FastAPI ML Inference Core.</li>
+          <li><strong>Interactive 3D Digital Twin:</strong> Three.js WebGL visualization offering real-time plant floor thermal & vibration mapping.</li>
+          <li><strong>Target Metrics:</strong> &gt;93% machine failure classification accuracy and 30–40% reduction in unplanned factory downtime.</li>
+          <li><strong>Academic Standards:</strong> Fully compliant with MCA Review-II requirements and ISO 13379-1 standards.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-200 pt-2 text-[10px] text-slate-400 font-mono flex justify-between">
+      <span>FactoryMind AI: Predictive Manufacturing Platform</span>
+      <span>Slide 2 of 18</span>
+    </div>
+  </section>
+
+  <!-- SLIDE 7: SYSTEM ARCHITECTURE -->
+  <section class="slide-page bg-white text-slate-900 p-12 justify-between rounded-3xl">
+    <div>
+      <div class="flex justify-between items-start border-b border-slate-200 pb-3">
+        <div>
+          <span class="text-sky-600 font-bold text-xs uppercase tracking-wider font-mono">CHAPTER 4: SYSTEM DESIGN</span>
+          <h2 class="text-3xl font-black text-slate-900">4-Tier System Architecture & Pipeline</h2>
+        </div>
+        <div class="text-right text-xs text-slate-500 font-mono">
+          <div>TKIET Warananagar</div>
+          <div class="text-sky-600 font-bold">SY MCA &bull; Review-II</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4 my-auto">
+      <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl space-y-2">
+        <span class="text-[10px] uppercase font-bold text-sky-600 font-mono">Tier 1 &bull; Edge Gateway</span>
+        <h4 class="text-sm font-bold text-slate-900">Java 21 Ingestion</h4>
+        <p class="text-xs text-slate-600">High-concurrency multithreaded socket polling daemon connecting to machine PLCs with 2.5s streaming frames.</p>
+      </div>
+
+      <div class="bg-sky-50 border-2 border-sky-300 p-5 rounded-2xl space-y-2">
+        <span class="text-[10px] uppercase font-bold text-sky-700 font-mono">Tier 2 &bull; API & Data Core</span>
+        <h4 class="text-sm font-bold text-sky-950">FastAPI & SQLite ORM</h4>
+        <p class="text-xs text-slate-700">Asynchronous RESTful APIs with SQLAlchemy ORM logging multi-sensor time-series and dispatching alerts.</p>
+      </div>
+
+      <div class="bg-indigo-50 border-2 border-indigo-300 p-5 rounded-2xl space-y-2">
+        <span class="text-[10px] uppercase font-bold text-indigo-700 font-mono">Tier 3 &bull; AI Diagnostics</span>
+        <h4 class="text-sm font-bold text-indigo-950">Machine Learning & XAI</h4>
+        <p class="text-xs text-slate-700">Multidimensional anomaly scoring, calibrated failure probability, SHAP tree decomposition, and RUL estimation.</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl space-y-2">
+        <span class="text-[10px] uppercase font-bold text-slate-600 font-mono">Tier 4 &bull; Presentation</span>
+        <h4 class="text-sm font-bold text-slate-900">3D WebGL Digital Twin</h4>
+        <p class="text-xs text-slate-600">Three.js 3D Spindle Model with rotating chuck, 60 FPS FFT spectrogram, and Web Audio SFX alarm sirens.</p>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-200 pt-2 text-[10px] text-slate-400 font-mono flex justify-between">
+      <span>FactoryMind AI: Predictive Manufacturing Platform</span>
+      <span>Slide 7 of 18</span>
+    </div>
+  </section>
+
+</body>
+</html>
